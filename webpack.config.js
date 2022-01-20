@@ -9,7 +9,13 @@ module.exports = {
     clean: true,
   },
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      hash: true,
+      title: 'The Honey Shop',
+      myPageHeader: 'Hello World',
+      template: './src/index.html',
+      filename: './index.html'
+    }),
   ],
   module: {
     rules: [
@@ -20,6 +26,10 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+      },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
       },
     ],
   }
