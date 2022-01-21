@@ -1,4 +1,4 @@
 import './styles.css';
 import { startUp } from "./modules/viewController";
 
-startUp();
+startUp(); // TODO: Create this
