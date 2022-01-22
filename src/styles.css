@@ -1,5 +1,5 @@
 body {
-    background-color: antiquewhite;
+    background-image: url(./images/wood.jpg);
 }
 
 #nav-bar {
@@ -19,8 +19,16 @@ body {
     align-items: center;
 }
 
-#nav-bar-link {
+.nav-bar-link {
     display: flex;
-    justify-items: center;
-    align-items: center;
+    background-color: rgb(133, 110, 81);
+    height:64px;
+    width: 200px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.nav-text {
+    text-align: center;
+    margin:auto;
+    text-decoration: none;
 }
