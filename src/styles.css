@@ -1,34 +1,55 @@
-body {
+#background {
+    position:fixed;
     background-image: url(./images/wood.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    filter:brightness(40%);
+    z-index: -1;
 }
 
+#resturant-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color:white;
+}
+
+
 #nav-bar {
+    position:fixed;
+    padding: 0;
+    top: 5rem;
     height: 4rem;
+    width: 100%;
     display:flex;
     align-content: center;
     justify-content: center;
-    background-color: bisque;
 }
 
 #nav-bar-link-list {
     list-style-type: none;
-    margin:0;
-    padding: 0;
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
 .nav-bar-link {
     display: flex;
-    background-color: rgb(133, 110, 81);
+    background-color: rgb(255, 221, 180);
     height:64px;
     width: 200px;
     border-radius: 5px 5px 0px 0px;
+}
+
+.nav-bar-link :hover {
+    background-color: aqua;
 }
 
 .nav-text {
     text-align: center;
     margin:auto;
     text-decoration: none;
+        font-family: 'Bitter', serif;
 }
