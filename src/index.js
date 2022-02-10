@@ -1,9 +1,19 @@
 import './styles.css';
-import { startUp } from "./modules/viewController";
-import wood from "./images/wood.jpg";
+import { BuildHome } from "./modules/homebuilder";
+import background from "./images/background.jpg";
 
-startUp(); // TODO: Create this
+function homeView() {
+    ClearPage();
+    BuildHome();
+}
 
-// const myImg = new Image();
-// myImg.src = wood;
-// document.querySelector('body').style.backgroundImage = myImg;
+function ClearPage() {
+    const contentDiv = document.querySelector("#content");
+    contentDiv.innerHTML = "";
+}
+
+document.querySelector("#homeBtn").addEventListener('click', homeView);
+
+
+BuildHome(); // TODO: Create this
+
