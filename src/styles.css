@@ -12,8 +12,19 @@ body {
     font-size: x-large;
 }
 
+#resturant-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color:white;
+}
+
+
 #nav-bar {
+    position:fixed;
+    padding: 0;
+    top: 5rem;
     height: 4rem;
+    width: 100%;
     display:flex;
     align-content: center;
     justify-content: center;
@@ -21,10 +32,7 @@ body {
 
 #nav-bar-link-list {
     list-style-type: none;
-    margin:0;
-    padding: 0;
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -42,6 +50,10 @@ body {
     height:64px;
     width: 200px;
     border-radius: 5px 5px 0px 0px;
+}
+
+.nav-bar-link :hover {
+    background-color: aqua;
 }
 
 .nav-text {
