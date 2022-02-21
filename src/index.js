@@ -19,7 +19,7 @@ function clearPage() {
 }
 
 document.querySelector("#homeBtn").addEventListener('click', homeView);
-// document.querySelector("#menuBtn").addEventListener('click', menuView);
+document.querySelector("#menuBtn").addEventListener('click', menuView);
 
 
 buildHome(); // TODO: Create this

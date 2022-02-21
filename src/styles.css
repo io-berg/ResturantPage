@@ -55,6 +55,7 @@ body {
 
 .nav-bar-link :hover {
     background-color: aqua;
+    color:black;
 }
 
 .nav-text {
