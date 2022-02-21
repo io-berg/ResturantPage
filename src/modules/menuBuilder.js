@@ -29,6 +29,7 @@ function buildMenuGrid() {
     gridDiv.appendChild(buildMenuItem("Sample", "The delicious taste of Loriem Ipsum"));
     gridDiv.appendChild(buildMenuItem("Foodstuff", "Very Tasty, Much nutricious"));
 
+    gridDiv.style.marginBottom = "10px";
 
     return gridDiv;
 }
