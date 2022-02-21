@@ -1,19 +1,26 @@
 import './styles.css';
-import { BuildHome } from "./modules/homebuilder";
+import { buildHome } from "./modules/homebuilder";
+import { buildMenu } from './modules/menuBuilder';
 import background from "./images/background.jpg";
 
 function homeView() {
-    ClearPage();
-    BuildHome();
+    clearPage();
+    buildHome();
 }
 
-function ClearPage() {
+function menuView() {
+    clearPage();
+    buildMenu();
+}
+
+function clearPage() {
     const contentDiv = document.querySelector("#content");
     contentDiv.innerHTML = "";
 }
 
 document.querySelector("#homeBtn").addEventListener('click', homeView);
+// document.querySelector("#menuBtn").addEventListener('click', menuView);
 
 
-BuildHome(); // TODO: Create this
+buildHome(); // TODO: Create this
 

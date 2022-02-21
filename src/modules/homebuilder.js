@@ -1,6 +1,6 @@
 const contentDiv = document.querySelector('#content');
 
-export function BuildHome() {
+export function buildHome() {
     contentDiv.style.fontFamily = 'Raleway';
     contentDiv.style.display = "flex";
     contentDiv.style.flexDirection = "column";
