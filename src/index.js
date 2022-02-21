@@ -1,8 +1,8 @@
 import './styles.css';
 import { buildHome } from "./modules/homebuilder";
 import { buildMenu } from './modules/menuBuilder';
-import background from "./images/background.jpg";
 import { buildReviews } from './modules/reviewsBuilder';
+import { buildWorkForUs } from './modules/workForUsBuilder';
 
 function homeView() {
     clearPage();
@@ -19,6 +19,11 @@ function reviewsView() {
     buildReviews();
 }
 
+function workForUsView() {
+    clearPage();
+    buildWorkForUs();
+}
+
 function clearPage() {
     const contentDiv = document.querySelector("#content");
     contentDiv.innerHTML = "";
@@ -27,6 +32,7 @@ function clearPage() {
 document.querySelector("#homeBtn").addEventListener('click', homeView);
 document.querySelector("#menuBtn").addEventListener('click', menuView);
 document.querySelector("#reviewsBtn").addEventListener('click', reviewsView);
+document.querySelector("#workForUsBtn").addEventListener('click', workForUsView);
 
 
 buildHome(); // TODO: Create this
